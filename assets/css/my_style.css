@@ -1,0 +1,12 @@
+body{
+    padding-top: 40px;
+    /*background-color: #fff9f5;*/
+    font-size: 14px;
+}
+#my-well{
+    margin-top: 9px;
+}
+#map-container{
+    height: 330px;
+    width: 100%; margin-top: 40px; margin-bottom: 40px;
+}
