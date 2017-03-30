@@ -152,7 +152,7 @@
             });
 
             var contentString = '<div class="info-window">+' +
-                '<h3>Info Window Content</h3>' + '<div class="info-content">'+ '<p>Hello Meet Us On Saturday</p>'+
+                '<h3>Christ the King Cathedral Church</h3>' + '<div class="info-content">'+ '<p>Please contact 0208342557 for direction. THANK YOU</p>'+
                     '</div>'+
                     '</div>';
              var infowindow = new google.maps.InfoWindow({
@@ -162,6 +162,9 @@
             marker.addListener('click', function(){
                 infowindow.open(map, marker);
             });
+            $(document).ready(function(){
+                window.onload(infowindow.open(map, marker))
+            })
 
         }
         
