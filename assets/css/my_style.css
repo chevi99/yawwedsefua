@@ -10,3 +10,6 @@ body{
     height: 330px;
     width: 100%; margin-top: 40px; margin-bottom: 40px;
 }
+.info-window {
+    font-family: 'Montserrat', sans-serif;
+}

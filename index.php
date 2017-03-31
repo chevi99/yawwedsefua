@@ -104,7 +104,7 @@
 <section>
     <div class="container" id="venue">
         <div class="page-header">
-            <h2>Venue.<small>Hope you'll be there<i class="fa fa-thumbs-up"></i> </small></h2>
+            <h2>Venue.<small>Hope you'll be there <i class="fa fa-thumbs-up"></i> </small></h2>
         </div>
         <div id="map-container" class="col-md-10"></div>
     </div>
@@ -126,6 +126,11 @@
         </div>
     </div>
 </section>
+<footer>
+    <div class="container text-center">
+        <p class="text-danger">&copy;Copyright <?php echo date('Y'); ?> All rights reserved</p>
+    </div>
+</footer>
 <script src="assets/jquery/jquery-3.1.0.js"></script>
 <script src="assets/bootstrap/js/bootstrap.js"></script>
 <script src="https://maps.google.com/maps/api/js?key=AIzaSyB7mzO1X7Fly4Ul68LrohescKnsVnxfGsY"></script>
@@ -163,7 +168,7 @@
                 infowindow.open(map, marker);
             });
             $(document).ready(function(){
-                window.onload(infowindow.open(map, marker))
+                window.onload = infowindow.open(map, marker)
             })
 
         }
