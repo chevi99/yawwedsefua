@@ -6,7 +6,7 @@
  * Time: 10:24 AM
  */
 include 'config/connection.php';
-$responseStatus = '';
+$responseStatus = $_GET['send'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +16,7 @@ $responseStatus = '';
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-theme.css">
     <link rel="stylesheet" href="assets/css/my_style.css">
-<!--    font awesome-->
+    <!--    font awesome-->
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
     <title>Yaw Weds Efua</title>
 </head>
@@ -29,7 +29,7 @@ $responseStatus = '';
         window.location.href = "index1.php?send=" + responseStatus;
     }
 </script>
-<body data-spy="scroll" data-target="#my-navbar" onload="getResponse()">
+<body data-spy="scroll" data-target="#my-navbar">
 <!--Navbaar-->
 <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar" style="background-color: #fff9f5!important;">
     <div class="container">
@@ -127,6 +127,7 @@ $responseStatus = '';
         <div class="container text-center" id="respond">
             <?php
             if ($responseStatus == 'Yes') {
+                echo '<div><img src="assets/images/download.jpg"></div>';
                 echo '<h5>THANK YOU FOR YOUR RESPONSE</h5>';
             }else{
                 echo '<h3>Are you coming?</h3>
@@ -189,12 +190,12 @@ $responseStatus = '';
 
             var contentString = '<div class="info-window">+' +
                 '<h3>Christ the King Cathedral Church</h3>' + '<div class="info-content">'+ '<p>Please contact 0208342557 for directions. THANK YOU</p>'+
-                    '</div>'+
-                    '</div>';
-             var infowindow = new google.maps.InfoWindow({
-                 content: contentString,
-                 maxWidth: 400
-             });
+                '</div>'+
+                '</div>';
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString,
+                maxWidth: 400
+            });
             marker.addListener('click', function(){
                 infowindow.open(map, marker);
             });
@@ -203,7 +204,7 @@ $responseStatus = '';
             })
 
         }
-        
+
 
         google.maps.event.addDomListener(window, 'load', initMap);
     });
