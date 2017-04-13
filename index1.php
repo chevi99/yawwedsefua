@@ -127,7 +127,7 @@ $responseStatus = $_GET['send'];
         <div class="container text-center" id="respond">
             <?php
             if ($responseStatus == 'Yes') {
-                echo '<div><img src="assets/images/download.jpg"></div>';
+                echo '<div><img src="assets/images/ajaxLoader.gif" class="img-thumbnail"></div>';
                 echo '<h5>THANK YOU FOR YOUR RESPONSE</h5>';
             }else{
                 echo '<h3>Are you coming?</h3>
