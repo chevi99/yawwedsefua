@@ -19,8 +19,8 @@ $responseStatus = $_GET['send'];
     <!--    font awesome-->
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
 <!--    google fonts-->
-    <link href="//fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
     <link href='//fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link href="//fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
     <title>Yaw Weds Efua</title>
 </head>
 

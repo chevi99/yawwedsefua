@@ -18,6 +18,9 @@ $responseStatus = '';
     <link rel="stylesheet" href="assets/css/my_style.css">
 <!--    font awesome-->
     <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.css">
+    <!--    google fonts-->
+    <link href='//fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+    <link href="//fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
     <title>Yaw Weds Efua</title>
 </head>
 
@@ -30,6 +33,7 @@ $responseStatus = '';
     }
 </script>
 <body data-spy="scroll" data-target="#my-navbar" onload="getResponse()">
+<div class="fontie">
 <!--Navbaar-->
 <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar" style="background-color: #fff9f5!important;">
     <div class="container">
@@ -40,15 +44,15 @@ $responseStatus = '';
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand">Yaw &amp; Efua</a>
+            <a href="#" class="navbar-brand" style="color: #C5B358;">Yaw &amp; Efua</a>
         </div><!--End navbar-head-->
         <div class="collapse navbar-collapse" id="navbar-collapse">
-            <a href="#" class="btn btn-info navbar-btn navbar-right">Download Now</a>
+            <a href="#" class="btn btn-info navbar-btn navbar-right" style="font-family: Aclonica;">Download Now</a>
             <ul class="nav navbar-nav">
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#respond">Respond to Invitation</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#venue">Venue</a></li>
+                <li><a href="#gallery" style="color: #C5B358;">Gallery</a></li>
+                <li><a href="#respond" style="color: #C5B358;">Respond to Invitation</a></li>
+                <li><a href="#contact" style="color: #C5B358;">Contact Us</a></li>
+                <li><a href="#venue" style="color: #C5B358;">Venue</a></li>
             </ul>
         </div>
     </div><!--End Container -->
@@ -56,18 +60,18 @@ $responseStatus = '';
 <!--End Navbar-->
 <!--jumbotron-->
 <div class="jumbotron">
-    <div class="container text-center">
+    <div class="container text-center" style="color: #ff6a7d;">
         <h1>Yaw Weds Efua</h1>
-        <p>Please join us as we tie the knot on 20<sup>th</sup>May, 2017 @ Christ the King Cathedral Sunyani.</p>
+        <p>Please join us as we tie the knot on 20<sup>th</sup>May, 2017 9:00am @ Christ the King Cathedral Sunyani.</p>
         <div class="btn-group">
-            <a href="#" class="btn btn-lg btn-info">Download App</a>
+            <a href="#" class="btn btn-lg btn-info" style="font-family: Aclonica;">Download App</a>
         </div>
     </div><!--End Container-->
 </div>
 <!--End jumbotron-->
 <div class="container">
     <section>
-        <div class="page-header" id="gallery">
+        <div class="page-header" id="gallery" style="color: #C5B358;">
             <h2>Gallery.<small>Check out our awesome gallery</small></h2>
         </div>
         <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
@@ -115,16 +119,18 @@ $responseStatus = '';
 
 <section>
     <div class="container" id="venue">
-        <div class="page-header">
+        <div class="container" id="venue" style="color: #C5B358;">
             <h2>Venue.<small>Hope you'll be there <i class="fa fa-thumbs-up"></i> </small></h2>
         </div>
-        <div id="map-container" class="col-md-10"></div>
+        <div id="map-container" class="col-md-10">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.209836621907!2d-2.3255946356106643!3d7.330314444709885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdacf38c78123f3%3A0xdf6e1b6136f1f3fc!2sChrist+The+King+Cathedral%2C+Kumasi-Sunyani+Rd%2C+Sunyani!5e0!3m2!1sen!2sgh!4v1492980022001" frameborder="0" style="border:0; width: 100%; height: 300px;"></iframe>
+        </div>
     </div>
 </section>
 
 <section>
     <div class="well" id="my-well">
-        <div class="container text-center" id="respond">
+        <div class="container text-center" id="respond" style="color: #C5B358;">
             <?php
             if ($responseStatus == 'Yes') {
                 echo '<h5>THANK YOU FOR YOUR RESPONSE</h5>';
@@ -144,6 +150,7 @@ $responseStatus = '';
         </div>
     </div>
 </section>
+</div>
 <footer>
     <div class="container text-center">
         <p class="text-danger">&copy;Copyright <?php echo date('Y'); ?> All rights reserved</p>
